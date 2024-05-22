@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prize Draw Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Prize Draw Game</h1>
+        <div class="result">
+            <div id="gameBoard">
+                <p id="winnerName">Winner: <span id="name">??</span></p>
+                <p id="prizeName">Prize: <span id="prize">??</span></p>
+                <div id="prizeImage" class="hidden">
+                    <img id="prizeImg" src="" alt="Prize Image">
+                </div>
+            </div>
+            <div id="loadingIcon" class="hidden">
+                <img src="pic/image.jpg" alt="Loading...">
+            </div>
+        </div>
+        <button id="drawButton">Draw Now</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
